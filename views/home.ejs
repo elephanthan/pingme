@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Ping Me</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">    
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <!-- <script src="js/script.js"></script> -->
+    <script type="text/javascript" src="http://jsgetip.appspot.com"></script>
+    <script>
+    	$(function(){
+    		$("#gobtn").click(function(){
+    			location.href=$("#roomNum_input").val();
+    		})
+    	})
+    </script>
+</head>
+<body class="container-fluid">
+	<section class="row">
+		<!-- <div class="main_lb_cont">
+			<div>
+				<label>Realtime Multi & Ping Code Editor</label>
+			</div>
+			<div>
+				<label>PING ME Project</label>
+			</div>
+		</div> -->
+		<div class="main_img_cont">
+			<img class="full-height" src="images/cover.png">
+		</div>
+		<div class="main_roomInput_cont">
+			<div class="roomInput_cont">
+				<input class="form-control" placeholder="Room Number" id="roomNum_input">
+				<button type="submit" class="btn btn-default" id="gobtn">Go</button>
+			</div>
+		</div>
+		<div class="main_foot">
+
+		</div>
+	</section>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Ping Me</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">    
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+</head>
+
+<body class="container-fluid">
+    <section class="row" id="dragsection" draggable="true" ondragend="move(event)">
+        <div id="top_intro">
+            <div>
+            </div>
+            <div class="top_intro_right">
+                <label id="roomNumber_lb"></label>
+            </div>
+        </div>
+        <div class="col-md-12 editor_whole_cont">
+            <div class="col-md-4 full-height dragdiv" draggable="true" ondragend="move(event)">
+                <div class="col-md-12 editor_set_container">
+                    <label>Theme: </label>
+                    <select class="form-control" id="theme_selector1">
+                        <option value="xcode" selected="selected">xcode</option>
+                        <option value="ambiance">ambiance</option>
+                        <option value="chaos">chaos</option>
+                        <option value="chrome">chrome</option>
+                        <option value="clouds_midnight">clouds_midnight</option>
+                        <option value="clouds">clouds</option>
+                        <option value="cobalt">cobalt</option>    
+                        <option value="crimson_editor">crimson_editor</option>
+                        <option value="theme-dawn">theme-dawn</option>
+                        <option value="dreamweaver">dreamweaver</option>
+                        <option value="eclipse">eclipse</option>
+                        <option value="github">github</option>
+                        <option value="idle_fingers">idle_fingers</option>
+                        <option value="katzenmilch">katzenmilch</option>
+                        <option value="kr_theme">kr_theme</option>
+                        <option value="kuroir">kuroir</option>
+                        <option value="merbivore">merbivore</option>
+                        <option value="mono_industrial">mono_industrial</option>
+                        <option value="monokal">monokal</option>
+                        <option value="pastel_on_dark">pastel_on_dark</option>
+                        <option value="solarized_dark">solarized_dark</option>
+                        <option value="solarized_light">solarized_light</option>
+                        <option value="terminal">terminal</option>
+                        <option value="textmate">textmate</option>
+                        <option value="tomorrow_night">tomorrow_night</option>
+                        <option value="tomorrow">tomorrow</option>
+                        <option value="vibrant_ink">vibrant_ink</option>
+                        <option value="twilight">twilight</option>
+                    </select>
+                    <label class="mode_lb">Mode: </label>
+                    <select class="form-control" id="mode_selector1">
+                        <option value="c_cpp">c</option>
+                        <option value="c_cpp">cpp</option>
+                        <option value="java" selected="selected">java</option>
+                        <option value="python">python</option>
+                        <option value="javascript">javascript</option>
+                        <option value="jsp">jsp</option>
+                        <option value="php">php</option>
+                        <option value="css">css</option>
+                        <option value="html">html</option>
+                        <option value="xml">xml</option>
+                        <option value="lua">lua</option>
+                    </select>
+                </div>
+            	<div class="col-md-12 full-height editor_div" id="editor1"></div>
+            </div>
+
+        	<div class="col-md-4 full-height dragdiv" draggable="true" ondragend="move(event)">
+                <div class="col-md-12 editor_set_container">
+                    <label>Theme: </label>
+                    <select class="form-control" id="theme_selector2">
+                        <option value="xcode" selected="selected">xcode</option>
+                        <option value="ambiance">ambiance</option>
+                        <option value="chaos">chaos</option>
+                        <option value="chrome">chrome</option>
+                        <option value="clouds_midnight">clouds_midnight</option>
+                        <option value="clouds">clouds</option>
+                        <option value="cobalt">cobalt</option>    
+                        <option value="crimson_editor">crimson_editor</option>
+                        <option value="theme-dawn">theme-dawn</option>
+                        <option value="dreamweaver">dreamweaver</option>
+                        <option value="eclipse">eclipse</option>
+                        <option value="github">github</option>
+                        <option value="idle_fingers">idle_fingers</option>
+                        <option value="katzenmilch">katzenmilch</option>
+                        <option value="kr_theme">kr_theme</option>
+                        <option value="kuroir">kuroir</option>
+                        <option value="merbivore">merbivore</option>
+                        <option value="mono_industrial">mono_industrial</option>
+                        <option value="monokal">monokal</option>
+                        <option value="pastel_on_dark">pastel_on_dark</option>
+                        <option value="solarized_dark">solarized_dark</option>
+                        <option value="solarized_light">solarized_light</option>
+                        <option value="terminal">terminal</option>
+                        <option value="textmate">textmate</option>
+                        <option value="tomorrow_night">tomorrow_night</option>
+                        <option value="tomorrow">tomorrow</option>
+                        <option value="vibrant_ink">vibrant_ink</option>
+                        <option value="twilight">twilight</option>
+                    </select>
+                    <label class="mode_lb">Mode: </label>
+                    <select class="form-control" id="mode_selector2">
+                        <option value="c_cpp">c</option>
+                        <option value="c_cpp">cpp</option>
+                        <option value="java" selected="selected">java</option>
+                        <option value="python">python</option>
+                        <option value="javascript">javascript</option>
+                        <option value="jsp">jsp</option>
+                        <option value="php">php</option>
+                        <option value="css">css</option>
+                        <option value="html">html</option>
+                        <option value="xml">xml</option>
+                        <option value="lua">lua</option>
+                    </select>
+                </div>
+                <div class="col-md-12 full-height editor_div" id="editor2"></div>
+            </div>
+
+        	<div class="col-md-4 full-height dragdiv" draggable="true" ondragend="move(event)">
+                <div class="col-md-12 editor_set_container">
+                    <label>Theme: </label>
+                    <select class="form-control" id="theme_selector3">
+                        <option value="xcode" selected="selected">xcode</option>
+                        <option value="ambiance">ambiance</option>
+                        <option value="chaos">chaos</option>
+                        <option value="chrome">chrome</option>
+                        <option value="clouds_midnight">clouds_midnight</option>
+                        <option value="clouds">clouds</option>
+                        <option value="cobalt">cobalt</option>    
+                        <option value="crimson_editor">crimson_editor</option>
+                        <option value="theme-dawn">theme-dawn</option>
+                        <option value="dreamweaver">dreamweaver</option>
+                        <option value="eclipse">eclipse</option>
+                        <option value="github">github</option>
+                        <option value="idle_fingers">idle_fingers</option>
+                        <option value="katzenmilch">katzenmilch</option>
+                        <option value="kr_theme">kr_theme</option>
+                        <option value="kuroir">kuroir</option>
+                        <option value="merbivore">merbivore</option>
+                        <option value="mono_industrial">mono_industrial</option>
+                        <option value="monokal">monokal</option>
+                        <option value="pastel_on_dark">pastel_on_dark</option>
+                        <option value="solarized_dark">solarized_dark</option>
+                        <option value="solarized_light">solarized_light</option>
+                        <option value="terminal">terminal</option>
+                        <option value="textmate">textmate</option>
+                        <option value="tomorrow_night">tomorrow_night</option>
+                        <option value="tomorrow">tomorrow</option>
+                        <option value="vibrant_ink">vibrant_ink</option>
+                        <option value="twilight">twilight</option>
+                    </select>
+                    <label class="mode_lb">Mode: </label>
+                    <select class="form-control" id="mode_selector3">
+                        <option value="c_cpp">c</option>
+                        <option value="c_cpp">cpp</option>
+                        <option value="java" selected="selected">java</option>
+                        <option value="python">python</option>
+                        <option value="javascript">javascript</option>
+                        <option value="jsp">jsp</option>
+                        <option value="php">php</option>
+                        <option value="css">css</option>
+                        <option value="html">html</option>
+                        <option value="xml">xml</option>
+                        <option value="lua">lua</option>
+                    </select>
+                </div>
+                <div class="col-md-12 full-height editor_div" id="editor3"></div>
+            </div>
+
+        </div>
+    </section>
+    <!-- ping tags -->
+    <audio id="leson" src="audio/02_attack.wav" /></audio>
+    <audio id="leson2" src="audio/04_comehere.wav" /></audio>
+    <audio id="leson3" src="audio/07_getback.wav" /></audio>
+    <div id="pingcursor"></div>
+    <div id="ping"></div>
+
+
+</body>
+
+<script src="ace/ace.js"></script>  
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="/channel/bcsocket.js"></script>
+<script src="/share/share.js"></script>
+<script src="/share/ace.js"></script>
+<!-- <script src="/socket.io/soket.io.js"></script> -->
+<script src="https://cdn.socket.io/socket.io-1.0.0.js"></script>
+<script src="js/ping.js"></script>
+<script src="js/script.js"></script>
+</html>

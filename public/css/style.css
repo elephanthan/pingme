@@ -1,0 +1,111 @@
+html, body, section, .full-height {
+    height: 100%;
+} 
+
+body{
+    /*background-color: #ebeaf0;*/
+    background-color: #ffe9ee;
+    overflow: scroll;
+    z-index : 1;
+}
+label{
+    color:#6d6d6d;
+}
+/*home.ejs*/
+.main_lb_cont{
+    margin-top:5%;
+    height:13%;
+    text-align:center;
+}
+.main_lb_cont label{
+    display: inline-block;
+    text-align:center;
+    height:100%;
+    font-size: 2.0em;    
+    font-family: 'BM JUA';
+}
+.main_img_cont{
+    margin-top:10%;
+    height:40%;
+    text-align: center;
+}
+.main_roomInput_cont{
+    margin-top:3%;
+    height:10%;
+    text-align:center;
+}
+.main_roomInput_cont input{
+    float:left;
+    width:80%;
+}
+.main_roomInput_cont button{
+    float:left;
+    text-align: center;
+}
+.roomInput_cont{
+    display:inline-block;
+    width:17%;
+}
+
+/*pad.ejs*/
+#top_intro{
+    height: 20%;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 20px;
+    float: none;
+    text-align: center;
+    z-index: 1;
+    margin-left:30px;
+    margin-right:30px;
+}
+.top_intro_right{
+    float:right;
+    width:20%;
+    height:100%;
+    text-align: right;
+    padding-top:5px;
+}
+.top_intro_right label{
+    height:100%;
+    line-height: 100%;
+    font-size: 1.8em;
+}
+.editor_whole_cont{
+    height:100%;
+}
+.editor_set_container{
+    height:5%;
+    margin-bottom: 10px;
+}
+.editor_set_container label{
+    float: left;
+    height: 50%;
+    line-height: 100%;
+    margin-top:2.5%;
+    color:#3589ae;
+    width:15%;
+}
+.mode_lb{
+    margin-left:10%;
+}
+.form-control{
+    width:30%;
+    float:left;
+}
+#ping {
+    width: 100px;
+    height: 100px;
+    display: none;
+    z-index:99;
+}
+
+#pingcursor {
+    position : "absolute";
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: "#bbaacc";
+    display: none;
+    z-index: 100;
+}
